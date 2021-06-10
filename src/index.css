@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+
+}
+.header{
+  background-color: teal;
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 10px 150px;
+  font-family: 'Limelight', cursive;
+}
+.nav a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+.container {
+  background-color: #dedede;
+  padding: 20px 150px;
+}
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card-confirmed,.card-deaths,.card-recoveries{
+  height: 150px;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px soli white;
+  
+}
+.card-confirmed{
+  box-shadow: 5px 6px rgb(255, 174, 0);
+  color:  rgb(255, 174, 0);
+}
+.card-recoveries{
+  box-shadow: 5px 6px green;
+  color: green;
+}
+.card-deaths{
+  box-shadow: 5px 6px red;
+  color: red;
+}
+.card-header{
+  margin-top: 20px;
+}
