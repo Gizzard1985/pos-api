@@ -19,8 +19,8 @@ app.use(morgan("dev"))
 app.use("/api/items", itemsRoute)
 
 //home route
-app.get("/api/items", (req, res) => {
-    res.json({items})
+app.get("/", (req, res) => {
+    res.send("<h1>my personal api</h1>")
 })
 
 const PORT= process.env.PORT || 5000
